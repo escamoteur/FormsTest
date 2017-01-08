@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xamForms:ReactiveContentPage x:TypeArguments="pageModels:SettingsFilerPageModel" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xamForms="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+             xmlns:pageModels="clr-namespace:FormsTest.PageModels;assembly=FormsTest"
+             x:Class="FormsTest.SettingsFilterPage" BackgroundColor="Black">
+<Grid Padding="0,30,0,0" RowSpacing="8">
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="20"/>
+    <ColumnDefinition Width="20"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="20"/>
+    <ColumnDefinition Width="20"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="20"/>
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition Height="60"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="20"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="20"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="*"/>
+  </Grid.RowDefinitions>
+
+  <Label Text="Welche Titel sollen angezeigt werden?"  FontSize="Large" LineBreakMode="WordWrap" TextColor="White"
+         VerticalOptions="Start" HorizontalOptions="Center"
+         Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="6"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+       Grid.Row="1" Grid.Column="1" />
+  <Label Text="0 - 3 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="1" Grid.Column="2"/>
+
+  
+  <Image Source="check_true.png" Aspect="AspectFill"
+       Grid.Row="2" Grid.Column="1"/>
+  <Label Text="4 - 6 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="2" Grid.Column="2"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+     Grid.Row="3" Grid.Column="1" />
+  <Label Text="6 - 8 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="3" Grid.Column="2"/>
+
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+     Grid.Row="4" Grid.Column="1" />
+  <Label Text="9 - 0 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="4" Grid.Column="2"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+     Grid.Row="5" Grid.Column="1" />
+  <Label Text="11 - 13 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+     Grid.Row="5" Grid.Column="2"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+       Grid.Row="6" Grid.Column="1" />
+  <Label Text="14 - 16 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="6" Grid.Column="2"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+       Grid.Row="7" Grid.Column="1" />
+  <Label Text="über 16 Jahre"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="7" Grid.Column="2"/>
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+     Grid.Row="9" Grid.Column="1" />
+  <Label Text="für Mädchen"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="9" Grid.Column="2"/>
+
+
+  <Image Source="check_false.png" Aspect="AspectFill"
+       Grid.Row="10" Grid.Column="1" />
+  <Label Text="für Jungs"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="10" Grid.Column="2"/>
+
+
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+       Grid.Row="1" Grid.Column="4" />
+  <Label Text="Abenteuer"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="1" Grid.Column="5"/>
+
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+       Grid.Row="2" Grid.Column="4"/>
+  <Label Text="Pferde"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="2" Grid.Column="5"/>
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+     Grid.Row="3" Grid.Column="4" />
+  <Label Text="Krimi"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="3" Grid.Column="5"/>
+
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+     Grid.Row="4" Grid.Column="4" />
+  <Label Text="Fußball"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="4" Grid.Column="5"/>
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+     Grid.Row="5" Grid.Column="4" />
+  <Label Text="Spannung"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+     Grid.Row="5" Grid.Column="5"/>
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+       Grid.Row="6" Grid.Column="4" />
+  <Label Text="Freunde"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="6" Grid.Column="5"/>
+
+  <Image Source="check_true.png" Aspect="AspectFill"
+       Grid.Row="7" Grid.Column="4" />
+  <Label Text="Tiere"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
+       Grid.Row="7" Grid.Column="5"/>
+
+  <Label Text="Um sicher zu gehen dass Ihr Kind diese Auswahl nicht ohne Sie ändert, sollten Sie ein Passwort festlegen."  
+          HorizontalOptions="Center" TextColor="White"
+          Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="5" />  
+
+  <Button Text="Passwort festlegen" TextColor="White" BackgroundColor="Gray" BorderRadius="5"
+          Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="5" />  
+  
+</Grid>  
+  
+  
+</xamForms:ReactiveContentPage>

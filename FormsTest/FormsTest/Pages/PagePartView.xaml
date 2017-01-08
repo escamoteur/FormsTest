@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:FormsTest.Pages;assembly=FormsTest"
+             x:Class="FormsTest.Pages.PagePartView">
+  <ContentView.Content>
+    <StackLayout>
+
+      <Label Text="Hello Forms" VerticalOptions="Start" HorizontalOptions="Center" />
+
+      <pages:CapitalEntry x:Name="capitalEntry" VerticalOptions= "Start" TextChanged="Entry_OnTextChanged"/>
+
+    </StackLayout> 
+  </ContentView.Content>
+</ContentView>
